@@ -47,12 +47,26 @@
 
   <main class="main-index">
     <h1 class="visually-hidden">Магазин Gllacy</h1>
-
     <section class="main-product">
       <h2 class="visually-hidden">Лучший товар</h2>
-      <h3 class="product-title">Нежный пломбир с клубничным джемом</h3>
-      <p class="product-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом –
-        это идеальный десерт для всей семьи. </p>
+      <ul class="product-list">
+        <li class="product-list-item">
+          <h3 class="product-title">Нежный пломбир с клубничным джемом</h3>
+          <p class="product-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом
+            – это идеальный десерт для всей семьи.</p>
+        </li>
+        <li class="product-list-item">
+          <h3 class="product-title">Сливочное мороженое со вкусом банана</h3>
+          <p class="product-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение
+            даже в самый жаркий летний день.</p>
+        </li>
+        <li class="product-list-item">
+          <h3 class="product-title">Карамельный пломбир с маршмеллоу</h3>
+          <p class="product-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет
+            сердца сладкоежек всех возрастов.</p>
+        </li>
+      </ul>
+
       <a class="product-link" href="#">Заказать</a>
       <img class="slider-image" src="" alt="Мороженное с клубничным джемом">
       <button class="slider-button slider-prev" type="button">
@@ -61,6 +75,7 @@
       <button class="slider-button slider-next" type="button">
         <span class="visually-hidden">Следующее фото</span>
       </button>
+
       <ol class="slider-pagination">
         <li class="slider-pagination-item">
           <button class="slider-pagination-button slider-pagination-button-current" type="button">
@@ -127,7 +142,7 @@
             <h3 class="product-title">Малинка</h3>
             <p class="product-description">Сливочное мороженое с малиновым джемом</p>
           </a>
-          <span class="product-price">310 ₽/кг</span>
+          <b class="product-price">310 ₽/кг</b>
           <button class="product-button" type="button">
             <span class="visually-hidden">Купить</span>
           </button>
@@ -138,7 +153,7 @@
             <h3 class="product-title">Фисташка</h3>
             <p class="product-description">Фисташковый пломбир с кусочками шоколада</p>
           </a>
-          <span class="product-price">340 ₽/кг</span>
+          <b class="product-price">340 ₽/кг</b>
           <button class="product-button" type="button">
             <span class="visually-hidden">Купить</span>
           </button>
@@ -149,7 +164,7 @@
             <h3 class="product-title">Черника</h3>
             <p class="product-description">Крем-брюле с черничным джемом</p>
           </a>
-          <span class="product-price">330 ₽/кг</span>
+          <b class="product-price">330 ₽/кг</b>
           <button class="product-button" type="button">
             <span class="visually-hidden">Купить</span>
           </button>
@@ -160,7 +175,7 @@
             <h3 class="product-title">Бабл-гам</h3>
             <p class="product-description">Ванильный пломбир со сладкой посыпкой</p>
           </a>
-          <span class="product-price">320 ₽/кг</span>
+          <b class="product-price">320 ₽/кг</b>
           <button class="product-button" type="button">
             <span class="visually-hidden">Купить</span>
           </button>
@@ -224,7 +239,7 @@
               <input type="text" id="appointment-adress" name="appointment-adress"
                 placeholder="ул. Большая Конюшенная, 19/8">
             </p>
-            <button class="button">Отправить</button>
+            <button class="button button-contacts" type="submit">Отправить</button>
           </form>
         </section>
       </div>
@@ -290,7 +305,8 @@
       <a class="htmlacademy-logo-link" href="https://htmlacademy.ru">
         <img class="htmlacademy-logo" src="" alt="Логотип htmlacademy">
       </a>
-      <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru">.html academy</a> © 2021</p>
+      <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru">.html academy</a> © 2021
+      </p>
     </section>
   </footer>
 </body>
