@@ -38,7 +38,16 @@ body {
   text-align: center;
   color: #FCFCFC;
   background-color: #FF2F64;
-  border-radius: 26px;
+  border: none;
+}
+
+.product-link {
+  line-height: 20px;
+  font-weight: 700;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+  background-color: #FCFCFC;
 }
 
 .navigation-link {
@@ -61,17 +70,6 @@ body {
 .product-description {
   font-size: 18px;
   line-height: 24px;
-}
-
-.slider-image {}
-
-.product-link {
-  line-height: 20px;
-  font-weight: 700;
-  color: inherit;
-  text-align: center;
-  text-decoration: none;
-  background-color: #FCFCFC;
 }
 
 .social-pages a {
