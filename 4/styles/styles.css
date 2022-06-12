@@ -1,0 +1,341 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+
+.product-link-button {
+  line-height: 20px;
+  font-weight: 700;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+  background: #FCFCFC;
+  border: 4px solid rgba(255, 47, 100, 0.3);
+  border-radius: 26px;
+
+}
+
+.product-link {
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+  background-color: #FCFCFC;
+}
+
+.button {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: #FCFCFC;
+  background-color: #FF2F64;
+  border: none;
+  border-radius: 26px;
+}
+
+.navigation-link {
+  line-height: 20px;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navigation-tel {
+  font-weight: 700;
+}
+
+.product-title {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.product-description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.social-pages a {
+  color: #FCFCFC;
+  text-decoration: none;
+}
+
+.gift {
+  color: #2D3440;
+  background-color: #FF7799;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: right;
+}
+
+.gift:first-of-type {
+  background-image: url(/images/gift-strawberry.png);
+}
+
+.gift:last-of-type {
+  background-image: url(/images/gift-marshmallow.png);
+}
+
+.gifts-title,
+.products-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  text-align: center;
+}
+
+.gift-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.products-list-item {
+  color: #2D3440;
+  background-color: #FCFCFC;
+}
+
+.product-list-title {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.product-list-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #565C66;
+}
+
+.product-price {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.advantages {
+  color: #2D3440;
+  background-color: #ffffff;
+}
+
+.advantages-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  text-align: center;
+}
+
+.features-list {
+  color: #565C66;
+}
+
+.blog {
+  color: #2D3440;
+  background-image: url(/images/blog.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.blog-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #565C66;
+}
+
+.blog-link {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.newsletter {
+  color: #2D3440;
+  background-color: #ffffff;
+}
+
+.newsletter-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #565C66;
+}
+
+.appointment {
+  color: #2D3440;
+  background-image: url(/images/delivery.jpg);
+  background-size: 100% auto;
+}
+
+.appointment-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.appointment-description,
+.appointment-inf-description {
+  color: #565C66;
+}
+
+.appointment-inf {
+  color: #2D3440;
+  background-color: #FCFCFC;
+}
+
+.appointment-form p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.contacts {
+  color: #2D3440;
+  background-image: url(/images/contacts.jpg);
+  background-size: 100% auto;
+}
+
+.contacts-content {
+  color: #2D3440;
+  background-color: #FCFCFC;
+}
+
+.contacts-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #565C66;
+}
+
+.contacts-adress-text,
+.contacts-phone {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.contacts-phone {
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.contacts-time {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #565C66;
+}
+
+.button-feedback {
+  text-decoration: none;
+}
+
+.footer-social-pages a {
+  color: #FCFCFC;
+  text-decoration: none;
+}
+
+.inf-link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.inf-item:first-of-type a {
+  font-weight: 700;
+
+}
+
+.about-text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.htmlacademy-link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(45, 52, 64,0.5);;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.breadcrumbs-item:last-of-type .breadcrumbs-link{
+  border-bottom: solid 1px #2D3440;
+}
+
+.breadcrumbs-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.inner-header-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.catalog-product {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.catalog-filter-group {
+  background-color:rgba(252, 252, 252, 0.3);
+  border-radius: 18px;
+}
+
+.filter-button {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  background-color:rgba(252, 252, 252, 0.3);
+  border: 2px solid #FCFCFC;
+  border-radius: 20px;
+}
+
+.pagination-link {
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: 20px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.pagination-current {
+  background: #FCFCFC;
+}
