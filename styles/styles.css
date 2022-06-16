@@ -74,9 +74,12 @@ body {
   margin: 0 auto;
 }
 
+.logo {
+  margin-right: 32px;
+}
+
 .navigation {
   display: flex;
-  margin: 0 auto;
 }
 
 .navigation-list {
@@ -87,7 +90,6 @@ body {
 
 .navigation-user {
   max-width: 450px;
-  margin-left: auto;
 }
 
 .navigation-link {
