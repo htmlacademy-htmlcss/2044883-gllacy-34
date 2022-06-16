@@ -68,28 +68,26 @@ body {
   border-radius: 26px;
 }
 
-.navigation-container {
+.navigation {
   display: flex;
   width: 1170px;
   margin: 0 auto;
 }
 
-.logo {
+.navigation-logo {
+  width: 140px;
   margin-right: 32px;
 }
 
-.navigation {
-  display: flex;
-}
-
 .navigation-list {
+  width: 480px;
   margin: 0;
   padding: 0;
-  width: 480px;
 }
 
 .navigation-user {
   max-width: 450px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -202,6 +200,7 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -492,6 +491,7 @@ body {
 }
 
 .catalog-product {
+  display: flex;
   font-size: 14px;
   line-height: 20px;
 }
