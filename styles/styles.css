@@ -247,11 +247,11 @@ body {
 }
 
 .gift:first-of-type {
-  background-image: url(/images/gift-strawberry.png);
+  background-image: url(../images/gift-strawberry.png);
 }
 
 .gift:last-of-type {
-  background-image: url(/images/gift-marshmallow.png);
+  background-image: url(../images/gift-marshmallow.png);
 }
 
 .gifts-title,
