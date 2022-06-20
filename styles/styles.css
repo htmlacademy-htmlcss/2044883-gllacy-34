@@ -2,7 +2,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/inter-400.woff2") format("woff2");
+  src: url("../fonts/inter-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/inter-700.woff2") format("woff2");
+  src: url("../fonts/inter-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -18,7 +18,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
-  src: url("/fonts/inter-900.woff2") format("woff2");
+  src: url("../fonts/inter-900.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -383,7 +383,7 @@ body {
   width: 570px;
   padding: 32px;
   color: #2D3440;
-  background-image: url(/images/blog.jpg);
+  background-image: url(../images/blog.jpg);
   background-repeat: no-repeat;
   background-size: 115% auto;
   background-position: 0 -100px;
@@ -436,7 +436,7 @@ body {
   display: flex;
   padding: 64px 64px 64px 100px;
   color: #2D3440;
-  background-image: url(/images/delivery.jpg);
+  background-image: url(../images/delivery.jpg);
   background-size: 100% auto;
 }
 
@@ -498,7 +498,7 @@ body {
 .contacts {
   padding: 64px 0 64px 64px;
   color: #2D3440;
-  background-image: url(/images/contacts.jpg);
+  background-image: url(../images/contacts.jpg);
   background-size: 100% auto;
   background-position: center;
 }
