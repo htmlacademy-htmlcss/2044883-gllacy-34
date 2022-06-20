@@ -188,7 +188,7 @@ body {
 }
 
 .main-product-container-columns .slider-image:first-of-type {
-  margin-right: 79px;
+  /* margin-right: 79px; */
 }
 
 .main-product-container-columns .slider-image:last-of-type {
