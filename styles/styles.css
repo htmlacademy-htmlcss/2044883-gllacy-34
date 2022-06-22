@@ -115,7 +115,7 @@ body {
 }
 
 .navigation-item {
-  margin: auto 0;
+  margin-top: 10px;
 }
 
 .navigation-user {
@@ -279,12 +279,16 @@ body {
   width: 550px;
 }
 
-.products-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0;
+.products {
   margin-bottom: 80px;
+}
+
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  gap: 40px 30px;
+  margin: 0;
+  margin-bottom: 60px;
   padding: 0;
   list-style-type: none;
 }
@@ -412,7 +416,7 @@ body {
 .newsletter {
   box-sizing: border-box;
   width: 570px;
-  padding: 26px 26px 28px;
+  padding: 26px;
   background-color: #FFFFFF;
   border: 6px solid #FFCBD8;
 }
@@ -428,7 +432,7 @@ body {
 }
 
 .field {
-  margin-right: 16px;
+  height: 48px;
 }
 
 .appointment {
@@ -438,6 +442,7 @@ body {
   color: #2D3440;
   background-image: url(../images/delivery.jpg);
   background-size: 100% auto;
+  background-position: center;
 }
 
 .appointment-content-text {
@@ -460,7 +465,6 @@ body {
 .appointment-description {
   width: 375px;
   margin: 0;
-  margin-bottom: 99px;
 }
 
 .appointment-inf-description {
@@ -480,19 +484,44 @@ body {
   background-color: #FCFCFC;
 }
 
-.appointment-form .appointment-form-phone {
-  margin-bottom: 20px;
+.appointment-form {
+  display: grid;
+  grid-template-columns: 117px 160px 111px;
+  gap: 20px 16px;
 }
 
-.appointment-form .appointment-form-adress {
-  margin-bottom: 32px;
+.appointment-form-phone {
+  grid-column: 2 / 4;
+}
+
+.appointment-form-adress {
+  grid-column: 1 / -1;
 }
 
 .appointment-form p {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
-  margin: 0;
+}
+
+.appointment-form label {
+  margin-bottom: 8px;
+}
+
+.appointment-form input {
+  height: 48px;
+}
+
+.appointment-form  .info {
+  display: none;
+}
+
+.button-contacts {
+  grid-column: 2 / 3;
+  margin-top: 8px;
 }
 
 .contacts {
@@ -669,7 +698,6 @@ body {
 
 .main-inner {
   padding-top: 32px;
-  padding-bottom: 80px;
 }
 
 .inner-header-title {
@@ -683,10 +711,6 @@ body {
   margin-bottom: 44px;
   font-size: 14px;
   line-height: 20px;
-}
-
-.main-inner .products-list-item {
-  margin-bottom: 40px;
 }
 
 .catalog-filter {
