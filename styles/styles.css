@@ -431,7 +431,13 @@ body {
   color: #565C66;
 }
 
+.newsletter-form {
+  display: flex;
+  justify-content: space-between;
+}
+
 .field {
+  width: 326px;
   height: 48px;
 }
 
