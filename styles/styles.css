@@ -60,7 +60,7 @@ body {
   background: #FCFCFC;
   border: 4px solid rgba(255, 47, 100, 0.3);
   border-radius: 26px;
-
+  cursor: pointer;
 }
 
 .product-link {
@@ -81,11 +81,27 @@ body {
   background-color: #FF2F64;
   border: 4px solid rgba(252, 252, 252, 0.4);
   border-radius: 26px;
+  cursor: pointer;
 }
 
 .product-button {
+  position: relative;
   min-width: 32px;
   min-height: 32px;
+  background-color: #FF2F64;
+  border: 2px solid #FF2F64;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.product-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #FCFCFC;
 }
 
 .navigation {
@@ -103,19 +119,11 @@ body {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   width: 480px;
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.navigation-user .navigation-link {
-  min-width: 16px;
-  min-height: 16px;
-}
-
-.navigation-item {
-  margin-top: 10px;
 }
 
 .navigation-user {
@@ -124,16 +132,57 @@ body {
   margin-left: auto;
 }
 
+.navigation-user .navigation-item:not(:last-of-type) .navigation-link {
+  margin-right: 16px;
+}
+
+.navigation-user .navigation-item:nth-child(2) .navigation-link {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 50%;
+}
+
+
 .navigation-link {
+  position: relative;
   display: block;
-  padding: 8px 16px;
+  min-width: 14px;
+  min-height: 14px;
+  padding: 6px 16px;
   line-height: 20px;
   color: inherit;
   text-align: center;
   text-decoration: none;
 }
 
+.navigation-link-icon {
+  padding-left: 38px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 30px;
+}
+
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #2D3440;
+}
+
+.navigation-link-icon .navigation-icon{
+  right: auto;
+  left: 18px;
+  margin: auto 0;
+}
+
 .navigation-tel {
+  padding: 6px 0;
   font-weight: 700;
 }
 
@@ -199,7 +248,8 @@ body {
   display: flex;
   min-width: 24px;
   min-height: 24px;
-  outline: 1px solid black;
+  border: 2px solid #FFCBD8;
+  border-radius: 50%;
 }
 
 .slider-pagination {
@@ -207,6 +257,12 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.slider-pagination-button {
+  min-width: 12px;
+  min-height: 12px;
+  padding: 0;
 }
 
 .social-list {
@@ -241,6 +297,7 @@ body {
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: right;
+  border-radius: 16px;
 }
 
 .gift:first-of-type {
@@ -307,6 +364,7 @@ body {
   padding: 0 40px 24px;
   color: #2D3440;
   background-color: #FCFCFC;
+  border-radius: 8px;
 }
 
 .products-list-item .product-link {
@@ -340,20 +398,30 @@ body {
 }
 
 .advantages {
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
   width: 1170px;
   margin-bottom: 80px;
+  padding: 24px 0;
+  background: url(../images/advantages-border.png);
+  background-repeat: no-repeat;
+  background-size: 160%;
+  background-position: -10px;
+  border-radius: 16px;
+}
+
+.advantages-container {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 1122px;
+  margin: auto;
   padding: 56px 40px 16px;
   background-color: #FFFFFF;
-  border: 24px solid #FFCBD8;
+  border-radius: 16px;
 }
 
 .advantages-title {
   width: 1000px;
-  margin: 0;
-  margin-bottom: 56px;
+  margin: 0 auto 56px;
   font-size: 32px;
   font-weight: 900;
   line-height: 46px;
@@ -370,8 +438,69 @@ body {
   list-style-type: none;
 }
 
+.features-list-item:nth-of-type(1)::before {
+  display: flex;
+  min-width: 32px;
+  height: 32px;
+  margin-right: 16px;
+  padding: 6px;
+  background-image: url(../images/ice-cream.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  border: 2px solid black;
+  border-radius: 50%;
+  content: "";
+}
+
+.features-list-item:nth-of-type(2)::before {
+  display: flex;
+  min-width: 32px;
+  height: 32px;
+  margin-right: 16px;
+  padding: 6px;
+  background-image: url(../images/cow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  border-radius: 50%;
+  border: 2px solid black;
+  content: "";
+}
+
+.features-list-item:nth-of-type(3)::before {
+  display: flex;
+  min-width: 32px;
+  height: 32px;
+  margin-right: 16px;
+  padding: 6px;
+  background-image: url(../images/leaf.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  border-radius: 50%;
+  border: 2px solid black;
+  content: "";
+}
+
+.features-list-item:nth-of-type(4)::before {
+  display: flex;
+  min-width: 32px;
+  height: 32px;
+  margin-right: 16px;
+  padding: 6px;
+  background-image: url(../images/thermometer.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  border-radius: 50%;
+  border: 2px solid black;
+  content: "";
+}
+
 .features-list-item {
-  width: 445px;
+  display: flex;
+  width: 505px;
   margin-bottom: 40px;
 }
 
@@ -390,6 +519,7 @@ body {
   background-repeat: no-repeat;
   background-size: 115% auto;
   background-position: 0 -100px;
+  border-radius: 16px;
 }
 
 .blog-title {
@@ -414,17 +544,26 @@ body {
 }
 
 .newsletter {
-  box-sizing: border-box;
   width: 570px;
+  border-radius: 16px;
+  background-image: url(../images/newsletter-border.png);
+  background-size: cover;
+}
+
+.newsletter-container {
+  box-sizing: border-box;
+  width: 558px;
+  margin: auto;
+  margin-top: 6px;
   padding: 26px;
   background-color: #FFFFFF;
-  border: 6px solid #FFCBD8;
+  border-radius: 16px;
 }
 
 .newsletter-text {
   width: 510px;
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: 40px;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -449,6 +588,7 @@ body {
   background-image: url(../images/delivery.jpg);
   background-size: 100% auto;
   background-position: center;
+  border-radius: 16px;
 }
 
 .appointment-content-text {
@@ -488,6 +628,7 @@ body {
   padding: 40px;
   color: #2D3440;
   background-color: #FCFCFC;
+  border-radius: 8px;
 }
 
 .appointment-form {
@@ -536,6 +677,7 @@ body {
   background-image: url(../images/contacts.jpg);
   background-size: 100% auto;
   background-position: center;
+  border-radius: 16px;
 }
 
 .contacts-content {
@@ -544,6 +686,7 @@ body {
   padding: 40px;
   color: #2D3440;
   background-color: #FCFCFC;
+  border-radius: 8px;
 }
 
 .contacts-subtitle-adress,
@@ -610,6 +753,26 @@ body {
   text-decoration: none;
 }
 
+.footer-social-link {
+  display: flex;
+  min-width: 24px;
+  min-height: 24px;
+  border: 2px solid #FFCBD8;
+  border-radius: 50%;
+}
+
+.social-tg {
+  background-image: url(../images/telegram.svg);
+}
+
+.social-vk {
+  background-image: url(../images/vk.svg);
+}
+
+.social-youtube {
+  background-image: url(../images/youtube.svg);
+}
+
 .footer-inf {
   width: 360px;
 }
@@ -640,9 +803,20 @@ body {
   margin-right: 0;
 }
 
-.inf-item:first-of-type a {
-  font-weight: 700;
+.inf-item:first-of-type a::before {
+  position: absolute;
+  top: 2px;
+  left: -23px;
+  width: 14px;
+  height: 14px;
+  background-image: url(../images/heart.svg);
+  background-repeat: no-repeat;
+  content: "";
+}
 
+.inf-item:first-of-type a {
+  position: relative;
+  font-weight: 700;
 }
 
 .footer-htmlacademy {
@@ -697,7 +871,19 @@ body {
   border-bottom: solid 1px #2D3440;
 }
 
+.breadcrumbs-item:not(:first-of-type) .breadcrumbs-link::before {
+  position: absolute;
+  width: 8px;
+  height: 6px;
+  top: 6px;
+  left: -18px;
+  content: "";
+  background-image: url(../images/breadcrumbs.svg);
+  background-repeat: no-repeat;
+}
+
 .breadcrumbs-link {
+  position: relative;
   color: inherit;
   text-decoration: none;
 }
@@ -771,6 +957,7 @@ body {
   background-color: rgba(252, 252, 252, 0.3);
   border: 2px solid #FCFCFC;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .pagination-container {
@@ -795,17 +982,31 @@ body {
   text-align: center
 }
 
+.pagination-prev {
+  position: relative;
+}
+
+.pagination-next {
+  position: relative;
+}
+
+.pagination-disabled {
+  opacity: 0.3;
+}
+
 .pagination-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 24px;
   min-width: 24px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: inherit;
-  line-height: 20px;
   color: inherit;
   text-decoration: none;
 }
 
 .pagination-current {
   background: #FCFCFC;
+  border-radius: 50%;
 }
