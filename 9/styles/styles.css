@@ -95,7 +95,7 @@ body {
 }
 
 .button {
-  margin: 4px;
+  margin: 0;
   padding: 12px 32px;
   font-family: inherit;
   font-size: 16px;
@@ -103,9 +103,9 @@ body {
   line-height: 20px;
   text-align: center;
   color: #FCFCFC;
+  outline: 4px solid rgba(255, 47, 100, .3);
   background-color: #FF2F64;
   border: none;
-  outline: 4px solid rgba(255, 47, 100, 0.3);
   border-radius: 26px;
   box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
   cursor: pointer;
@@ -130,7 +130,7 @@ body {
   font-weight: 400;
   color: #565C66;
   background-color: #B9B9B9;
-  outline-color: rgba(185, 185, 185, 0.3);;
+  border-color: rgba(185, 185, 185, 0.3);
 }
 
 .product-button {
@@ -469,7 +469,7 @@ body {
   min-height: 24px;
   fill: #FCFCFC;
   border-radius: 50%;
-  outline: 2px solid rgba(252, 252, 252, 0.3);
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
 }
 
 .social-link .navigation-icon {
@@ -479,16 +479,16 @@ body {
 }
 
 .social-link:hover {
-  outline-color: rgba(252, 252, 252, 0.5);
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.5);
 }
 
 .social-link:active {
-  outline-color: rgba(252, 252, 252, 0.5);
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.5);
   opacity: 0.5;
 }
 
 .social-link:focus {
-  outline-color: #2D3440;
+  box-shadow: 0 0 0 2px #2D3440;
 }
 
 .social-link:hover::after,  .social-link:active::after, .social-link:focus:after{
@@ -952,6 +952,10 @@ body {
   grid-column: 1 / -1;
 }
 
+.appointment-form-adress .field {
+  margin-bottom: 9px;
+}
+
 .appointment-form p {
   display: flex;
   flex-direction: column;
@@ -976,7 +980,6 @@ body {
 
 .button-contacts {
   grid-column: 2 / 3;
-  margin-top: 9px;
 }
 
 .contacts {
@@ -1047,17 +1050,21 @@ body {
 .tooltip {
   position: absolute;
   margin-top: 4px;
-  margin-left: 5px;
-  width: 16px;
-  height: 16px;
+  margin-left: 4px;
+  width: 14px;
+  height: 14px;
 }
 
 .tooltip-toggle {
   border: none;
   background-color: transparent;
-  padding: 0;
+  padding: 0 1px;
   margin: 0;
   display: block;
+}
+
+.tooltip-toggle:hover {
+  opacity: 0.5;
 }
 
 .tooltip-icon {
@@ -1065,10 +1072,6 @@ body {
   height: 100%;
   color: #2D3440;
   display: block;
-}
-
-.tooltip-toggle:hover .tooltip-icon {
-  opacity: 0.5;
 }
 
 .tooltip-text {
@@ -1681,6 +1684,7 @@ body {
 .popover .popover-close-button {
   top: -40px;
   padding: 5px 16px 5px 38px;
+  margin: 0;
   right: 0;
   position: absolute;
   font: inherit;
@@ -1767,7 +1771,7 @@ body {
 }
 
 .button-popover {
-  text-decoration: 0;
+  text-decoration: none;
   height: 20px;
 }
 
