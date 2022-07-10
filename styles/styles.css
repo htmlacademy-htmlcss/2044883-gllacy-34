@@ -1891,7 +1891,7 @@ body {
 }
 
 .popover-catalog {
-  top: 42px;
+  top: 44px;
   left: 0;
   width: 138px;
   padding: 8px 0 8px;
@@ -1910,7 +1910,7 @@ body {
 }
 
 .popover .catalog-button {
-  top: -42px;
+  top: -44px;
   left: 0;
   right: auto;
   padding: 7px 16px;
