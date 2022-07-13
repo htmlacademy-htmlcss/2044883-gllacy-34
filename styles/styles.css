@@ -65,6 +65,7 @@ body {
   0 0 0 4px rgba(252, 252, 252, 0.4),
   0 4px 12px 0 rgba(45, 52, 64, 0.1);
   cursor: pointer;
+  outline: none;
 }
 
 .product-link-button:hover {
@@ -101,6 +102,14 @@ body {
   background-color: #FCFCFC;
 }
 
+.product-link:focus-visible {
+  outline: none;
+}
+
+.product-link:focus-visible .product-image, .product-link:focus-visible .product-list-title{
+  outline: 2px solid black;
+}
+
 .button {
   margin: 0;
   padding: 12px 32px;
@@ -117,6 +126,7 @@ body {
   0 0 0 4px rgba(255, 47, 100, 0.3),
   0 4px 12px 0 rgba(45, 52, 64, 0.1);
   cursor: pointer;
+  outline: none;
 }
 
 .button:hover {
@@ -147,6 +157,8 @@ body {
 }
 
 .product-button {
+  display: flex;
+  align-self: flex-end;
   position: relative;
   min-width: 32px;
   min-height: 32px;
@@ -157,6 +169,7 @@ body {
   border-radius: 50%;
   cursor: pointer;
   fill: #FCFCFC;
+  outline: none;
 }
 
 .product-icon {
@@ -306,6 +319,7 @@ body {
   text-align: center;
   text-decoration: none;
   border-radius: 30px;
+  outline: none;
 }
 
 .navigation-link:hover {
@@ -489,6 +503,7 @@ body {
   fill: #FCFCFC;
   border-radius: 50%;
   box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
+  outline: none;
 }
 
 .social-link .navigation-icon {
@@ -506,11 +521,12 @@ body {
   opacity: 0.5;
 }
 
-.social-link:focus {
+.social-link:focus, .social-link:focus-visible {
   box-shadow: 0 0 0 2px #2D3440;
+  background-color: #2D3440;
 }
 
-.social-link:hover::after,  .social-link:active::after, .social-link:focus:after{
+.social-link:hover::after,  .social-link:active::after {
   position: relative;
   display: block;
   z-index: -1;
@@ -548,6 +564,7 @@ body {
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  outline: none;
 }
 
 .slider-pagination-button:hover {
@@ -700,6 +717,8 @@ body {
 }
 
 .product-price {
+  display: flex;
+  align-self: flex-end;
   margin: 4px 0;
   font-size: 20px;
   line-height: 24px;
@@ -1366,7 +1385,7 @@ body {
 }
 
 .catalog-product {
-  margin-bottom: 44px;
+  margin-bottom: 28px;
   font-size: 14px;
   line-height: 20px;
 }
@@ -1385,8 +1404,7 @@ body {
 }
 
 .catalog-filter-group:last-of-type {
-  margin: 0;
-  margin-right: 16px;
+  margin: 0 16px 16px 0;
 }
 
 .catalog-filter-title {
@@ -1476,7 +1494,8 @@ body {
 }
 
 .range-toggle:focus {
-  outline: 2px solid #2D3440;
+  box-shadow: 0 0 0 2px #2D3440;
+  outline: none;
 }
 
 .toggle-min {
@@ -1534,12 +1553,13 @@ body {
   border-radius: 2px;
 }
 
-.control:hover .control-mark {
-  border-color: #FCFCFC;;
+.control-input:hover:not(:disabled) + .control-mark {
+  border-color: #FCFCFC;
 }
 
-.control-input:disabled + .control-mark {
-  opacity: 0.5;
+.control-input[type="checkbox"]:focus-visible + .control-mark {
+  border-color: #FCFCFC;
+  box-shadow: 0 0 0 2px #2D3440;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark{
@@ -1556,8 +1576,17 @@ body {
   content: "";
 }
 
-.control-input[type="checkbox"]:checked:hover + .control-mark::before {
+.control-input[type="checkbox"]:checked:hover:not(:disabled) + .control-mark::before {
   background-image: url(../images/checkbox-checked.svg);
+}
+
+.control-input[type="checkbox"]:checked:focus-visible + .control-mark::before{
+  background-image: url(../images/checkbox-checked.svg);
+}
+
+.control-input:disabled + .control-mark {
+  opacity: 0.5;
+  border-color: #2D3440;
 }
 
 .control-input[type="radio"] + .control-mark {
@@ -1580,8 +1609,18 @@ body {
   background-color: #FCFCFC;
 }
 
+.control-input[type="radio"]:focus-visible + .control-mark {
+  box-shadow: 0 0 0 2px #2D3440;
+  border-color: #FCFCFC;
+}
+
+.control-input[type="radio"]:checked:focus-visible + .control-mark::before {
+  background-color: #FCFCFC;
+}
+
 .catalog-filter-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 8px 24px;
   list-style-type: none;
@@ -1601,6 +1640,7 @@ body {
   width: 185px;
   height: 40px;
   margin-top: auto;
+  margin-bottom: 16px;
   padding: 0;
   font-family: inherit;
   font-size: 14px;
@@ -1610,6 +1650,7 @@ body {
   border: 2px solid #FCFCFC;
   border-radius: 20px;
   cursor: pointer;
+  outline: none;
 }
 
 .filter-button:hover {
