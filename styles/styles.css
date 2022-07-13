@@ -101,6 +101,14 @@ body {
   background-color: #FCFCFC;
 }
 
+.product-link:focus-visible {
+  outline: none;
+}
+
+.product-link:focus-visible .product-image, .product-link:focus-visible .product-list-title{
+  outline: 2px solid black;
+}
+
 .button {
   margin: 0;
   padding: 12px 32px;
@@ -489,6 +497,7 @@ body {
   fill: #FCFCFC;
   border-radius: 50%;
   box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
+  outline: none;
 }
 
 .social-link .navigation-icon {
@@ -506,11 +515,12 @@ body {
   opacity: 0.5;
 }
 
-.social-link:focus {
+.social-link:focus, .social-link:focus-visible {
   box-shadow: 0 0 0 2px #2D3440;
+  background-color: #2D3440;
 }
 
-.social-link:hover::after,  .social-link:active::after, .social-link:focus:after{
+.social-link:hover::after,  .social-link:active::after {
   position: relative;
   display: block;
   z-index: -1;
@@ -1534,7 +1544,7 @@ body {
   border-radius: 2px;
 }
 
-.control-input[type="checkbox"]:hover:not(:disabled) + .control-mark {
+.control-input:hover:not(:disabled) + .control-mark {
   border-color: #FCFCFC;
 }
 
