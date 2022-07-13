@@ -1538,10 +1538,6 @@ body {
   border-color: #FCFCFC;;
 }
 
-.control-input:disabled + .control-mark {
-  opacity: 0.5;
-}
-
 .control-input[type="checkbox"]:checked + .control-mark{
   border: none;
 }
@@ -1556,8 +1552,13 @@ body {
   content: "";
 }
 
-.control-input[type="checkbox"]:checked:hover + .control-mark::before {
+.control-input[type="checkbox"]:checked:hover:not(:disabled) + .control-mark::before {
   background-image: url(../images/checkbox-checked.svg);
+}
+
+.control-input:disabled + .control-mark {
+  opacity: 0.5;
+  border-color: #2D3440;
 }
 
 .control-input[type="radio"] + .control-mark {
